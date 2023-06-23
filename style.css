@@ -1,0 +1,347 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+.left {
+    text-align: left !important;
+}
+.right {
+    text-align: right !important;
+}
+
+header {
+    margin-top: 5px;
+    padding: 0 25px;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .top img {
+    width: 150px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    transition: all .5s;
+    position: relative;
+}
+nav ul li a:hover {
+    color: orange;
+    font-weight: 600;
+    font-size: 27px;
+}
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .text-header {
+    margin-top: 50px;
+} */
+.text-header p {
+    font-size: 35px;
+    margin: 2px;
+    font-weight: 600;
+}
+.text-header p span {
+    color: orange;
+}
+.text-header h2 {
+    margin-top: 0;
+    color: orange;
+    font-size: 45px;
+    font-weight: 700;
+}
+.sub-header .image {
+    background-color: orange;
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Header css */
+section {
+    padding: 40px 25px 0;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row .col-1 {
+    flex-basis: 35%;
+    padding: 10px;
+}
+.image {
+    padding: 10px;
+}
+.image img {
+    width: 70%;
+    height: min-content;
+    border-radius: 9px;
+}
+
+.row .col-2 {
+    flex-basis: 60%;
+    padding-top: 35px;
+}
+.col-2 h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: orange;
+    margin-bottom: 0;
+}
+.col-2 p {
+    width: 80%;
+    font-weight: 500;
+    margin: 9px 0;
+}
+.sub-title {
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+.contact {
+    margin-top: 30px;
+}
+.contact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact ul li {
+    padding: 10px;
+}
+.contact ul li a {
+    text-decoration: none;
+}
+.contact ul li a i {
+    font-size: 25px;
+    color: black;
+}
+/* CSS about */
+#education, #skill {
+    background-color: rgb(252, 236, 207);
+    padding-bottom: 25px;
+}
+#education {
+    padding-top: 0;
+    margin-top: 20px;
+}
+.somone {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+.tittle {
+    background-color: #fff;
+    margin: 0 -54px;
+    font-size: 60px;
+    font-weight: 600;
+    color: orange;
+    margin-bottom: 0;
+    text-align: center;
+}
+.sub-edu {
+    font-size: 40px;
+    font-weight: 600;
+    color: orange;
+}
+.list {
+    list-style: none;
+}
+.list li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.list li:first-child {
+    padding-top: 35px;
+}
+.progres {
+    flex-basis: 75%;
+    text-align: left;
+}
+.progres-2 {
+    flex-basis: 75%;
+    text-align: right;
+    justify-self: right;
+}
+.list li .sub-order {
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #8f8d8d;
+    position: relative;
+    z-index: 2;
+}
+.list li .sub-order::after {
+    content: " ";
+    background-color: orange;
+    width: 50%;
+    height: 70px;
+    position: absolute;
+    left: 8px;
+    bottom: -70px;
+    z-index: 1;
+}
+.list li:last-child .sub-order::after {
+    content: " ";
+    background-color: orange;
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    left: 8px;
+    bottom: -35px;
+    z-index: 1;
+}
+.list li:first-child .sub-order::before {
+    content: " ";
+    background-color: orange;
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    left: 8px;
+    top: -35px;
+    z-index: 1;
+}
+.sub-prog {
+    color: orange;
+    margin: 0;
+}
+.info {
+    margin-top: 4px;
+    font-size: 15px;
+}
+/* End CSS education */
+.col-sk {
+    flex-basis: 47%;
+    padding: 15px;
+    text-align: left;
+}
+.land {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.land p {
+    font-size: 20px;
+    font-weight: 500;
+    color: orange;
+    margin-bottom: 4px;
+}
+.land div {
+    width: 75%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+.land div span {
+    margin: 0;
+    padding: 0;
+    width: 77%;
+    height: 100%;
+    background-color: orange;
+    display: block;
+    border-radius: 16px;
+}
+/* End CSS skill */
+.expe {
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+.gambar {
+    flex-basis: 27%;
+}
+.pemanis img {
+    width: 90%;
+}
+.more {
+    padding: 10px;
+}
+.more h5 {
+    color: orange;
+    font-size: 27px;
+    margin: 4px 0;
+}
+.more span {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.more p {
+    margin-top: 8px;
+}
+/* End CSS expericience */
+.awd-main {
+    justify-content: center;
+}
+.awd {
+    flex-basis: 47%;
+    padding: 25px 0;
+    position: relative;
+}
+.awd img {
+    width: 80%;
+}
+.awd .sub-awd {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 10px;
+}
+.sub-awd h3 {
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+.sub-awd span {
+    margin: 15px 0;
+    font-weight: 600;
+}
+.sub-awd p {
+    margin: 3px 0;
+}
+
+/* Add on */
+.btn {
+    font-size: 40px;
+    outline: none;
+    color: black;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: -50px;
+    transition: all 1s;
+}

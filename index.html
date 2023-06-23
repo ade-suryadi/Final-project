@@ -1,225 +1,278 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Profil Saya</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="asset/css/styleVALUEJS.css">
-    </head>
-      <!-- 1Untuk mengisi perubahan pada form, maka akan bisa diterapkan pada form. 
-           Mengubah Button Contact menjadi Button Edit
-           hal 1 : memberikan identitas pada setiap Komponen pada script HTML Kita
-           jadi setiap komponen kita berikan nama/id supaya lebih mudah untuk mengubah nanti. 
-       -->
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ade - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header id="header">
         <nav>
-            <div class="menu-mobile">
-                 <!-- 2tambahkan -->
-                <a href="#" onclick="showMenu()">menu</a>
+            <div class="top">
+                <img src="img/logo.png" alt="">
             </div>
-            <ul id="menu">
-                <li><a href="/">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">INVENTORY</a></li>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#expericience">Expericience</a></li>
+                <li><a href="#interest">Interest</a></li>
+                <li><a href="#award">Award</a></li>
             </ul>
         </nav>
+        <div class="sub-header">
+            <div class="text-header">
+                <p>Hi, i'm <span>Ade</span></p>
+                <p>from Indonesia, i'm</p>
+                <h2>Fullstack web developer</h2>
+            </div>
+            <div class="image">
+                <img src="img/profil.png" alt="unnamed.jpg">
+            </div>
+        </div>
+    </header>
 
-        <section id="box-profile">
-            <div class="img-profile">
-                <div class="photo" style="background-image: url(asset/image/download.jpeg)">
+    <section id="about">
+        <div class="row">
+            <div class="col-1">
+                <div class="image">
+                    <img src="img/ab.png" alt="">
                 </div>
             </div>
-            <div class="description">
-                <!-- 2Pada bagian Nama tambahkan atribut ID. penting mudah diingat dan dipahami!! 
-                kemudian pada roles kasih nama prole, lalu 
-                pada button contact ubah nama menjadi EDIT lalu value pada ahref tambahkan inputform, 
-                save - debug 
-                pada saat klik edit akan mengarah ke form input.
-
-                next
-
-                kita kasih atribut onclick=editForm pada button edit 
-
-                -->
-                <h1 id="pName">Ade supriyadi</h1>
-                <p id="pRole">Front End Designer</p>
-                <a href="#input-form" class="button bg-blue" onclick="editForm()">Edit</a>
-                <a href="#" class="button border-green">Resume</a>
-            </div>
-            <!-- 3Pada komponent class information tambahkan juga 
-                 A. id="pAvailable" pada text-gray
-                 B. id="pAvailable" pada text-gray
-                 C. id="pAvailable" pada text-gray
-                 D. id="pAvailable" pada text-gray
-
-                 Pada section Inputform kita tambahka juga masing2 input id 
-                 A. input id=inpname
-                 A. input id=inprole
-                 A. input id=inpavailability
-                 A. input id=inpage
-                 A. input id=inplocation
-                 A. input id=inpyears
-                 A. input id=inpemail
-
-                 pada tombol submit tambahkan onclik dengan function simpanform
-
-                 save.
-
-                -->
-            <div class="information">
-                <div class="data">
-                    <p class="field">Availability</p>
-                    <p id="pAvailable" class="text-gray">Full Time</p>
-                </div>
-                <div class="data">
-                    <p class="field">Usia</p>
-                    <p id="pAge" class="text-gray">23</p>
-                </div>
-                <div class="data">
-                    <p class="field">Lokasi</p>
-                    <p id="pLocation" class="text-gray">Banten</p>
-                </div>
-                <div class="data">
-                    <p class="field">Pengalaman</p>
-                    <p id="pExperience" class="text-gray">2</p>
-                </div>
-                <div class="data">
-                    <p class="field">Email</p>
-                    <p id="pEmail" class="text-gray">adesuryadi1305@gmail.com</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="input-form">
-            <form method="#" action="#">
-                <div class="form">
-                    <label>Nama</label>
-                    <input id="inpName" type="text" name="nama" placeholder="masukkan nama anda">
-                </div>   
-                <div class="form">
-                    <label>Role</label>
-                    <input id="inpRole" type="text" name="role">
-                </div>  
-                <div class="form">
-                    <label>Availability</label>
-                    <input id="inpAvailability" type="text" name="Availability">
-                </div>  
-                <div class="form">
-                    <label>Usia</label>
-                    <input id="inpUsia" type="number" name="usia">
-                </div>  
-                <div class="form">
-                    <label>Lokasi</label>
-                    <input id="inpLokasi" type="text" name="lokasi">
-                </div>  
-                <div class="form">
-                    <label>Years Experience</label>
-                    <input id="inpYears" type="number" name="experience">
-                </div>  
-                <div class="form">
-                    <label>Email</label>
-                    <input id="inpEmail" type="email" name="email">
-                </div>            
-                <div class="form">
-                    <input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-green">
-                </div>
-            </form>            
-        </section>
-
-         <!-- 4Pertama kita buat sebuah variabel formenu mengarah ke id inputform.
-            kemudian formenu kita panggil , kita ubah dan style dan display menjadi none.
-            lalu save - debug
-            "Halaman Form Hilang" 138-139
-
-            5Fungsiberikutnya seperti editform line144-157 dan simpanform line148-150
-            EditForm
-            buat logika pada code menggunakan if dg kondisi awal
-            formMenu style displaynya none maka akan diubah jadi block, selain itu pada else
-            maka tampilannya tetap none.
-            simpan - debug
-
-            6Selanjutnya pada line 164 - 172menampilkan nama masuk dalam form nama dsterusnya. 
-            caranya buat sebuah variable name kita ambil value dengan id yang sudah didefinisikan tadi cth pName, kemudian ambil innerhtml nya lalu
-            pada bagian input nama pada form dg nama id InpName. document.getelementby id
-            lalu ubah value menjadi name yang berasal dari variable yang sudah dibuat diatas. 
-            save - debug
-
-            QUIZ = lakukan untuk file selanjutnya. 
-            save-debug.
-        -->
-
-
-        <script>
-            var formMenu = document.getElementById("input-form");
-            formMenu.style.display="none";
-            
-            function editForm(){
-                if(formMenu.style.display === "none"){
-                    formMenu.style.display = "block";
-                }else{
-                    formMenu.style.display = "none";
-                }
-
-                var name = document.getElementById("pName").innerHTML;
-                var role = document.getElementById("pRole").innerHTML;
-                var available = document.getElementById("pAvailable").innerHTML;
-                var usia = document.getElementById("pAge").innerHTML;
-                var lokasi = document.getElementById("pLocation").innerHTML;
-                var experience= document.getElementById("pExperience").innerHTML;
-                var email = document.getElementById("pEmail").innerHTML;
-
-                document.getElementById("inpName").value=name;
-                document.getElementById("inpRole").value=role;
-                document.getElementById("inpAvailability").value=available;
-                document.getElementById("inpUsia").value=usia;
-                document.getElementById("inpLokasi").value=lokasi;
-                document.getElementById("inpYears").value=experience;
-                document.getElementById("inpEmail").value=email;
-
-            }
-            
-            function simpanForm(){
-                var name = document.getElementById("pName");
-                var role = document.getElementById("pRole");
-                var available = document.getElementById("pAvailable");
-                var usia = document.getElementById("pAge");
-                var lokasi = document.getElementById("pLocation");
-                var experience= document.getElementById("pExperience");
-                var email = document.getElementById("pEmail");
-
-                name.innerHTML = document.getElementById("inpName").value;
-                role.innerHTML = document.getElementById("inpRole").value;
-                available.innerHTML = document.getElementById("inpAvailability").value;
-                usia.innerHTML = document.getElementById("inpUsia").value;
-                lokasi.innerHTML = document.getElementById("inpLokasi").value;
-                experience.innerHTML = document.getElementById("inpYears").value;
-                email.innerHTML = document.getElementById("inpEmail").value;
+            <div class="col-2">
+                <h2>About Me</h2>
                 
-                event.preventDefault();
-                formMenu.style.display="none";
-            }
+                <p>
+                    Saya adalah anak pertama dari dua bersaudara. Usia saya 23 tahun. Saya lulusan IPA, dan telah mempelajari mengenai web developer. Dari segi back-end saya telah belajar mengenai HTML, CSS, Javascript dan beberapa framework diantaranya Bootstrap dan Jquery. Dari sisi back-end saya telah mempelajari bahasa pemrograman PHP dan Python, juga NodeJS. Dengan semua itu saya siap menjadi seorang Fullstack web developer dan akan terus mengasah serta menambah pengetahuan saya, sehingga lebih siap untuk tantangan kedepan.
+                </p>
+                <div class="contact">
+                    <h3 class="sub-title">Contact Me:</h3>
+                    <ul>
+                        <li><a href="mailto:adesuryadi1305@gmail.com"><i class="bi-mailbox"></i></a></li>
+                        <li><a href="https://wa.me/083893672764"><i class="bi-whatsapp"></i></a></li>
+                        <li><a href="https://github.com/ade-suryadi"><i class="bi-github"></i></a></li>
+                        <li><a href="https://instagram.com/embo_kun?igshid=NTc4MTIwNjQ2YQ=="><i class="bi-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/mwlite/in/ade-suryadi-5a540027a"><i class="bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            function showMenu()
-            {
-                var menu = document.getElementById("menu");
-                var box = document.getElementById("box-profile");
+    <section id="education">
+        <div>
+            <h2 class="tittle">Education</h2>
+        </div>
+        <div class="row">
+            <div class="somone">
+                <h3 class="sub-edu">Ofline</h3>
+                <ul class="list satu">
+                    <li>
+                        <div class="progres">
+                            <h4 class="sub-prog">SMA Ma'arif Cilegon</h4>
+                            <p class="info">Jurusan IPA</p>
+                        </div>
+                        <p class="sub-order">1</p>
+                    </li>
+                    <li>
+                        <div class="progres">
+                            <h4 class="sub-prog">BBVP Serang</h4>
+                            <p class="info">BLK Listrik teknik otomasi</p>
+                        </div>
+                        <p class="sub-order">2</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="someone">
+                <h3 class="sub-edu">Online</h3>
+                <ul class="list dua">
+                    <li>
+                        <p class="sub-order">1</p>
+                        <div class="progres-2">
+                            <h4 class="sub-prog">Dicoding</h4>
+                            <p class="info">Javascript dasar dan Back-end developer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="sub-order">2</p>
+                        <div class="progres-2">
+                            <h4 class="sub-prog">Code politan</h4>
+                            <p class="info">Dasar pemrograman dan Algoritma</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="sub-order">3</p>
+                        <div class="progres-2">
+                            <h4 class="sub-prog">Hacktiv8</h4>
+                            <p class="info">Langkah fundamental menjadi web developer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                if(menu.style.display === "block"){
-                    menu.style.display = "none";
-                    box.style.paddingTop = "0px";
-                }else{
-                    menu.style.display = "block";
-                    box.style.paddingTop = "125px";
-                }
-            }
-        </script>
+    <section id="skill">
+        <h2 class="tittle">Skills</h2>
+        <div class="row">
+            <div class="col-sk">
+                <div class="land">
+                    <p>HTML</p>
+                    <div  class="data">
+                        <span id="html"  data-pro="93"></span>
+                    </div>
+                </div>
+                <div class="land">
+                    <p>CSS</p>
+                    <div  class="data">
+                        <span id="css" data-pro="89"></span>
+                    </div>
+                </div>
+                <div class="land">
+                    <p>Javascript</p>
+                    <div  class="data">
+                        <span id="js" data-pro="89"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sk">
+                <div class="land">
+                    <p>PHP</p>
+                    <div class="data">
+                        <span data-pro="93" id="php"></span>
+                    </div>
+                </div>
+                <div class="land">
+                    <p>Python</p>
+                    <div class="data">
+                        <span data-pro="74" id="python"></span>
+                    </div>
+                </div>
+                <div class="land">
+                    <p>MySQL</p>
+                    <div class="data">
+                        <span data-pro="82" id="sql"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="expericience">
+        <h2 class="tittle">Expericience</h2>
+        <div class="row expe">
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/pmni.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Cv. Raja busana</h5>
+                    <span>Pramuniaga</span>
+                    <p>
+                        Disinilah awal saya mengenal dunia kerja setelah lulus dari bangku SMA, selama satu tahun saya mengemban posisi sebagai packer barang, pramuniaga dan kasir. Teman yang ramah juga atasan yang memanusiakan manusia membuat siapapun betah, termasuk saya pribadi.
+                    </p>
+                </div>
+            </div>
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/ks.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Krakatau Steel</h5>
+                    <span>Quality Control</span>
+                    <p>
+                        Adalah sebuah perusaan BUMN pertama yang saya tahu, semua orang pernah bermimpi untuk bergabung didalamnya, mungkin termasuk saya pribadi. Namun, apalah daya belum tercapai. Jadi ini hanyalah bagian dari fiktiv belaka termasuk posisi yang tertera.
+                    </p>
+                </div>
+            </div>
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/ip.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Indonesia Power</h5>
+                    <span>Teknisi</span>
+                    <p>
+                        Sama seperti sebelumnya, ini juga hanayalah fiktiv belaka termasuk posisi yang tertulis. Saya harap ini hanya lampiran untuk memenuhi tugas final projek saya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="interest">
+        <h2 class="tittle">Interest</h2>
+        <div class="row expe">
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/baca.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Membaca</h5>
+                    <p>
+                        Buku adalah gudang dari segala pengetahuan bagi mereka yang mau membaca
+                    </p>
+                </div>
+            </div>
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/game.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Bermain Game</h5>
+                    <p>
+                        Kemampuan berfikir dapat diasah dengan sebuah permainan sehingga membuat kita tidak merasa jenuh.
+                    </p>
+                </div>
+            </div>
+            <div class="gambar">
+                <div class="pemanis">
+                    <img src="img/travel.jpg" alt="">
+                </div>
+                <div class="more">
+                    <h5>Traveling</h5>
+                    <p>
+                        Sebuah inspirasi terkadang dapat kita dapatkan diluar rumah.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="award">
+        <h2 class="tittle">Award</h2>
+        <div class="row awd-main">
+            <div class="awd">
+                <img src="img/tro.jpg" alt="">
+                <div class="sub-awd">
+                    <h3>Juara 1</h3>
+                    <span>Makan kerupuk</span>
+                    <p>
+                        Dari 21 peserta dalam memperingati HUT RI tahun 2022
+                    </p>
+                </div>
+            </div>
+            <div class="awd">
+                <img src="img/tro.jpg" alt="">
+                <div class="sub-awd">
+                    <h3>Juara 2</h3>
+                    <span>Bawa kelereng</span>
+                    <p>
+                        Dari 18 peserta dalam memperingati HUT RI tahun 2022
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <a href="#header" class="btn"><i class="bi-arrow-up-circle"></i></a>
 
-
-
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
